@@ -1,5 +1,12 @@
 [web]
 54.80.22.38
+[localhost]
+localhost
+
+[localhost:vars]
+Course="devops from inventory"
+Trainer="trainer from inventory"
+Duration="110hrs"
 
 [catalogue]
 54.80.22.37
