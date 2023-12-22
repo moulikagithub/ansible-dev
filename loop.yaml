@@ -4,9 +4,9 @@
   - name: print person
     ansible.builtin.debug:
      msg: "hello {{item}}"
-  loop:
-  - ramesh
-  - suresh
-  - himesh
-  - naresh
-  - harish
+    loop:
+    - ramesh
+    - suresh
+    - himesh
+    - naresh
+    - harish
