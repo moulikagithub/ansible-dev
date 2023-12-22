@@ -1,8 +1,8 @@
-- name: loop
+- name: loops in ansible
   hosts: localhost
   tasks:
   - name: print person
-    ansible.builtin,debug:
+    ansible.builtin.debug:
      msg: "hello {{item}}"
   loop:
   - ramesh
