@@ -1,0 +1,22 @@
+- name: variables from args
+  hosts: localhost
+  vars_files:
+  - variables.yaml
+  vars:
+   person: "mm from play"
+   wishes: "gg from play"
+  vars_prompt:
+   - name: person
+     prompt: person name
+     private: false
+   - name: wish
+     prompt: wish is
+     private: false
+
+  tasks:
+  - name: check variables
+    vars:
+     person: "mm from task"
+     wishes: "gg from task"
+    ansible.builtin.debug:
+     msg: "hello {{person}}, good{{wishes}}"

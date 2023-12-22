@@ -7,6 +7,8 @@ localhost
 Course="devops from inventory"
 Trainer="trainer from inventory"
 Duration="110hrs"
+person="mm from inventory"
+wishes="gg from inventory"
 
 [catalogue]
 54.80.22.37
