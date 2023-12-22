@@ -1,8 +1,8 @@
-- name: install  packages
+- name: loop
   hosts: localhost
   tasks:
-  - name: installation
-    ansible.builting.package:
+  - name: installing packages
+    ansible.builtin.package:
      name: "{{item}}"
      state: present
     loop:
