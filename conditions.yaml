@@ -3,8 +3,8 @@
   tasks:
   - name: check user
     ansible.builtin.command: id roboshop
-     register: user
-     ignore_errors: true
+    register: user
+    ignore_errors: true
 
   - name: print output
     ansible.builtin.debug:
