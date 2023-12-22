@@ -4,7 +4,10 @@
   - name: playbook task-1
     ansible.builtin.debug:
     msg: "hello from p-1 task-1"
-
-    - name: playbook task-1
+    
+- name: playbook from task1 and task2
+  host: local host
+  tasks:
+    - name: playbook2
       ansible.builtin.debug:
-      msg: "hello from p-1 task-2"
+      msg: "hello from p-2 task-2"
