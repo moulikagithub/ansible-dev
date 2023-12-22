@@ -1,21 +1,21 @@
 - name: variables from args
   hosts: localhost
- # vars_files:
-  #- variables.yaml
-  vars_prompt:
-  - name: person
-    prompt: person name
-    private: false
-  - name: wishes
-    prompt: wish is
-    private: false
+  vars_files:
+  - variables.yaml
+ # vars_prompt:
+ # - name: person
+   # prompt: person name
+    #private: false
+  #- name: wishes
+   # prompt: wish is
+    #private: false
   vars:
    person: "mm from play"
    wishes: "gg from play"  
   tasks:
   - name: check variables
-    #vars:
-     #person: "mm from task"
-     #wishes: "gg from task"
+    vars:
+     person: "mm from task"
+     wishes: "gg from task"
     ansible.builtin.debug:
      msg: "hello {{person}}, good{{wishes}}"
