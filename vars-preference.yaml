@@ -6,12 +6,12 @@
    person: "mm from play"
    wishes: "gg from play"
   vars_prompt:
-   - name: person
-     prompt: person name
-     private: false
-   - name: wish
-     prompt: wish is
-     private: false
+  - name: person
+    prompt: person name
+    private: false
+  - name: wish
+    prompt: wish is
+    private: false
 
   tasks:
   - name: check variables
