@@ -1,5 +1,6 @@
 - name: playbook server
   hosts: web
+  become: yes
   tasks:
   - name: install nginx
     ansible.builtin.packages:
