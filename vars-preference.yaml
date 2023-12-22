@@ -6,7 +6,7 @@
   - name: person
     prompt: person name
     private: false
-  - name: wish
+  - name: wishes
     prompt: wish is
     private: false
   vars:
