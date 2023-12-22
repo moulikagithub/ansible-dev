@@ -3,7 +3,7 @@
   tasks:
   - name: installation
     ansible.builting.package:
-     name: {{item}}
+     name: "{{item}}"
      state: present
     loop:
     - git
