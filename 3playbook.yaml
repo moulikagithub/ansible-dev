@@ -1,13 +1,13 @@
-- name: playbook from task1 and task2
+- name: play1
   hosts: localhost
   tasks:
    - name: playbook task-1
      ansible.builtin.debug:
      msg: "hello from p-1 task-1"
 
-- name: playbook from task1 and task2
+- name: play2
   hosts: localhost
   tasks:
-    - name: playbook2
+    - name: playbook task-2
       ansible.builtin.debug:
        msg: "hello from p-2 task-2"
