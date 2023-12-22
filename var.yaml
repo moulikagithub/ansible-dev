@@ -3,7 +3,7 @@
   vars:
     Course: "devops"
     Trainer: "siva"
-    Duration: "30mins"
+    Duration: "110HRS"
    tasks:
    - name: check variables
      ansible.builtin.debug:
