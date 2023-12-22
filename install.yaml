@@ -1,0 +1,11 @@
+- name: install  packages
+  hosts: localhost
+  tasks:
+  - name: installation
+    ansible.builting.package:
+     name: {{item}}
+     state: present
+    loop:
+    - git
+    - mysql
+    - postfix
