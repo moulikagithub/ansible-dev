@@ -2,9 +2,6 @@
   hosts: localhost
   vars_files:
   - variables.yaml
-  vars:
-   person: "mm from play"
-   wishes: "gg from play"
   vars_prompt:
   - name: person
     prompt: person name
@@ -12,7 +9,9 @@
   - name: wish
     prompt: wish is
     private: false
-
+  vars:
+   person: "mm from play"
+   wishes: "gg from play"  
   tasks:
   - name: check variables
     vars:
