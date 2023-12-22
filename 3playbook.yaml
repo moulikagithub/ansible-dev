@@ -3,7 +3,7 @@
   tasks:
    - name: playbookandtask-1
      ansible.builtin.debug:
-     msg: "hello from p-1 task-1"
+      msg: "hello from p-1 task-1"
 
 - name: play2
   hosts: web
